@@ -10,7 +10,12 @@ export default function Home() {
   return (
     <div>
       <div className="">
-        <img className="w-full" src={image.src} alt="" srcset="" />
+        <Image
+          src={image.src}
+          width={1000}
+          height={1000}
+          style={{ width: "100%", height: "auto" }}
+        />
         {/* section 1 */}
         <div className="flex p-8 sm:h-[90vh] flex-col sm:flex-row gap-6">
           <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center">
@@ -28,7 +33,14 @@ export default function Home() {
             </div>
           </div>
           <div className="sm:w-[50%] h-full flex items-center sm:justify-center">
-            <img className="" src={image1.src} alt="" srcset="" />
+            <Image
+              width={1000}
+              height={1000}
+              style={{ width: "100%", height: "auto" }}
+              src={image1.src}
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
 
@@ -67,7 +79,14 @@ export default function Home() {
             </div>
           </div>
           <div className="sm:w-[50%] h-full flex items-center sm:justify-center">
-            <img className="" src={image2.src} alt="" srcset="" />
+            <Image
+              width={1000}
+              height={1000}
+              style={{ width: "100%", height: "auto" }}
+              src={image2.src}
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
         {/* band */}
@@ -77,10 +96,7 @@ export default function Home() {
         >
           <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col items-center justify-center gap-4">
             <div className="font-bold text-3xl">TRAIN FOR FREE TODAY</div>
-            <div className="px-6 py-3 bg-[#d20a0a] font-bold">
-              FREE PASS
-            </div>
-
+            <div className="px-6 py-3 bg-[#d20a0a] font-bold">FREE PASS</div>
           </div>
         </div>
       </div>

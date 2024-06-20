@@ -91,10 +91,10 @@ export default function Home() {
         </div>
         {/* band */}
         <div
-          className="w-full h-[200px] bg-cover bg-center flex p-8 flex items-center relative"
+          className="w-full h-[200px] bg-cover bg-center flex p-8 flex items-center relative z-[1]"
           style={{ backgroundImage: `url(${image4.src})` }}
         >
-          <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col items-center justify-center gap-4">
+          <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col items-center justify-center gap-4 z-[1]">
             <div className="font-bold text-3xl">TRAIN FOR FREE TODAY</div>
             <div className="px-6 py-3 bg-[#d20a0a] font-bold">FREE PASS</div>
           </div>
